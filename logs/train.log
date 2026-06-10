@@ -1,0 +1,32 @@
+2026-06-10 18:43:06,418 - INFO - ============================================================
+2026-06-10 18:43:06,418 - INFO - FASTTEXT MODEL — TRAINING
+2026-06-10 18:43:06,419 - INFO - ============================================================
+2026-06-10 18:43:06,419 - INFO - Loading cleaned dataset...
+2026-06-10 18:43:07,088 - INFO - Dataset size: 5399
+2026-06-10 18:43:07,096 - INFO - Label distribution:
+label
+0    3669
+1    1730
+2026-06-10 18:43:09,232 - INFO - Train size: 4319, Test size: 1080
+2026-06-10 18:43:09,703 - INFO - Start training...
+2026-06-10 18:44:36,480 - INFO - 
+=== CLASSIFICATION REPORT ===
+2026-06-10 18:44:36,490 - INFO - 
+              precision    recall  f1-score   support
+
+      Normal       0.99      0.99      0.99       734
+        Spam       0.99      0.98      0.98       346
+
+    accuracy                           0.99      1080
+   macro avg       0.99      0.99      0.99      1080
+weighted avg       0.99      0.99      0.99      1080
+
+2026-06-10 18:44:36,491 - INFO - 
+=== CONFUSION MATRIX ===
+2026-06-10 18:44:36,495 - INFO - 
+[[729   5]
+ [  8 338]]
+2026-06-10 18:44:36,623 - INFO - Model saved to model/fasttext_model.h5
+2026-06-10 18:44:36,890 - INFO - Tokenizer saved to model/fasttext_tokenizer.pkl
+2026-06-10 18:44:37,443 - INFO - Training charts saved to logs/charts/fasttext_training.png
+2026-06-10 18:44:37,445 - INFO - Training complete!
